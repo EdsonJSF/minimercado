@@ -1,0 +1,17 @@
+<div ng-include="'/app/templates/dashboard/header.html'"></div>
+<div class="container p-2">
+  <form class="row align-items-end m-2" ng-submit="submit()">
+    <div class="col-6">
+      <label for="inputCategory" class="visually">Categoria</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputCategory"
+        placeholder="Categoria"
+        required
+        ng-model="category.nombre"
+      />
+    </div>
+    <button type="submit" class="col-6 btn btn-success">Editar</button>
+  </form>
+</div>

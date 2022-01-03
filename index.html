@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="Fix4u" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fix4u App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-route.min.js"></script>
+    <script src="assets/libs/angular-local-storage.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/constants.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/controllers.js"></script>
+  </head>
+  <body>
+    <nav class="bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a href="#/">
+              <h1>Fix4u App</h1>
+            </a>
+          </div>
+          <div
+            class="
+              col-3 col-sm-2 col-md-1
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <a href="#/">Inicio</a>
+          </div>
+          <div
+            class="
+              col-3 col-sm-2 col-md-1
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <a href="#/login">Iniciar Seción</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <div ng-view></div>
+    </div>
+  </body>
+</html>

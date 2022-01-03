@@ -1,0 +1,33 @@
+<div ng-include="'/app/templates/dashboard/header.html'"></div>
+<div class="container d-flex flex-column align-items-center w-100 p-2">
+  <button ng-click="crear()" class="btn btn-outline-success m-2">
+    Crear Producto
+  </button>
+  <div class="border w-100">
+    <div ng-repeat="producto in products" class="container-fluid border p-2">
+      <div class="row">
+        <div class="col-12 col-sm-6 align-self-center">
+          <img
+            ng-src="assets/img/{{producto.foto}}"
+            alt="{{producto.nombre}}"
+            class="w-100 h-auto"
+          />
+        </div>
+        <div class="col-6 col-sm-3 align-self-center">
+          <p>nombre: {{producto.nombre}}</p>
+          <p>stock: {{producto.stock}}</p>
+          <p>precio: {{producto.precio}}</p>
+          <p>categoria: {{producto.categoria}}</p>
+        </div>
+        <div class="col-6 col-sm-3 align-self-center">
+          <button ng-click="edit(producto.id)" class="btn btn-secondary">
+            Editar
+          </button>
+          <button ng-click="delete(producto)" class="btn btn-danger">
+            Eliminar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
